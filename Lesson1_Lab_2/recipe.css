@@ -1,15 +1,17 @@
 h2{
 	color: rgb(164,164,0);
-	background-color: rgb(240,240,240);
-	font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+	font-family: "Lucida Sans Unicode", Helvetica, sans-serif;
 	text-decoration: underline;
 	font-weight: normal;
-	font-size: 25pt;
+	font-size: 18pt;
 	letter-spacing: 0.25em;
+	text-align: left;
 }
-.menu{
-	list-style-type: none;
+h2 span {
+	background-color: rgb(240,240,240);
+
 }
+
 .home{
 	vertical-align: middle;
 }
@@ -20,6 +22,7 @@ h2{
 }
 body{
 	color: rgb(64,64,64);
+	font-size: 11pt;
 	background-color: white;
 	font-family: Georgia, Garamond, Arial;
 	background-image: url("./images/silverware.jpg");
@@ -29,10 +32,10 @@ a{
 	color: rgb(164,164,0);
 }
 .val{
-	text-align: right;
+	text-align: left;
 }
 .copy{
-	text-align: right;
+	text-align: left;
 }
 blockquote{
 	background-color: rgb(255,255,168);
