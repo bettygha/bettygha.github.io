@@ -1,0 +1,70 @@
+fieldset {
+	background-color: #e0e0ff;
+	margin-left: 1em;
+	width: 32em;
+	border: 2px outset gray;
+}
+
+#usersign {
+	background-color: white;
+	border: 1px outset gray;
+}
+
+label.heading {
+	text-align: left;
+	float: left;
+	width: 11em;
+	margin-right: 1em;
+	font-weight: bold;
+}
+
+input {
+	padding: 0.2em;
+	border: 2px outset gray;
+}
+
+#submit {
+	font-size: 120%;
+	font-weight: bold;
+	background: #FFAAAA;
+}
+
+#heading {
+	margin-top: 2em;
+	font-weight: bold;
+}
+
+#matches {
+	width: 32em;
+	margin-left: 1em;
+	clear: left;
+	margin-bottom: 3em;
+}
+
+#picture {
+	width: 150px;
+	float: left;
+	margin-bottom: 3em;
+}
+
+#name {
+	background: #E0E0FF;
+	text-indent: 5px;
+}
+
+#info.heading {
+	text-indent: 5px;
+	float: left;
+	width: 11em;
+	font-weight: bold;
+}
+table{
+    border: none;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: red;
+}

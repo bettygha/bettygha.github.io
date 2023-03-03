@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NerdLuv</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="nerdluv.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="bannerarea">
+        <img src="http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/4/nerdluv.png" alt="banner logo" /> <br />
+        where meek geeks meet
+    </div>
+
+    <div>
+
+       
+        <fieldset>
+            <legend id="usersign">New User Signup:</legend>
+        <table >
+        <form action="https://mumstudents.org//params.php" enctype="multipart/form-data" method="post">
+
+                <tr>
+                    <td><label class="heading" >Name:</label></td>
+                    <td><input type="text" name="username" size="16" maxlength="16" /></td>
+                </tr>
+                <tr>
+                    <td><label class="heading" >Gender:</label></td>
+                    <td><input type="radio" name="gender" id="gmale" value="M" /><label for="gmale">Male</label>
+                        <input type="radio" name="gender" id="gfemale" value="F" checked="checked" /><label for="gfemale">Female</label></td>
+                </tr>
+                <tr>
+                    <td><label class="heading" >Age:</label></td>
+                    <td><input type="text" name="age" size="5" maxlength="2" /></td>
+                </tr>
+                <tr>
+                    <td><label class="heading" >Personality type:</label></td>
+                    <td><input type="text" name="PType" size="6" maxlength="4" />
+                        (<a href="http://www.humanmetrics.com/cgiwin/JTypes2.asp">Don't know your type?</a>)</td>
+                </tr>	
+                <tr>
+                    <td><label class="heading" >Favorite OS:</label></td>
+                    <td><select name="FavOS">
+                        <option value="Windows" selected="selected">Windows</option>
+                        <option value="Mac OS X">Mac OS X</option>
+                        <option value="Linux">Linux</option>
+                        
+                      </select></td>
+                </tr>		
+                
+                <tr>
+                    <td><label class="heading" >Seeking age:</label></td>
+                    <td><input type="text" name="minage" size="6" maxlength="2" /> and <input type="text" name="maxage" size="5" maxlength="2" /></td>
+                </tr>
+                <tr>
+                    <td><input id="submit" type="submit" name="signup" value="Sign Up" /></td>
+                </tr>
+            </form>
+        </table>  
+            </fieldset>	
+      
+        <p>
+            <p>This page is for single nerds to meet and date each other! Type in<br>
+            your personal information and wait for the nerdly luv to begin!<br>
+            Thank you for using our site.</p>
+            <p>Results and page (C) Copyright NerdLuv Inc.</p>
+        </p>
+        
+        <ul>
+            <li>
+                <a href="signup.html">
+                    <img src="http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/4/back.gif" alt="icon" />
+                    Back to front page
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="w3c">
+        <a href='https://validator.w3.org/check?uri=referer'> <img
+            src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+            alt="html validator"/></a>
+        
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border-style:none;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </div>
+</body>
+</html>
