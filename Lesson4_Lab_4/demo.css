@@ -1,0 +1,20 @@
+fieldset{
+    background-color: #e0e0ff;
+    border: 2px outset gray;
+}
+legend{
+    background-color: white;
+	border: 1px outset gray;
+}
+.container{
+    width: 500px;
+
+}
+a{
+    color: red;
+}
+#submit {
+	font-size: 120%;
+	font-weight: bold;
+	background: #FFAAAA;
+}

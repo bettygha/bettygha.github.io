@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="demo.css" type="text/css" />
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <form action="https://mumstudents.org//params.php" enctype="multipart/form-data" method="post">
+            <fieldset>
+                <legend>New User Signup</legend>
+                <label for="nmae"> Name:</label>
+                <input type="text" name="name" maxlength="16" id="name" size="16" />
+                <br /><br />
+                <label for="sex">Gender:</label>
+                <input type="radio" name="sex" value="Male" id="male" />
+                <label for="male">Male </label>
+                <input type="radio" name="sex" value="Female" id="female" checked />
+                <label for="female">Female </label>
+                <br /><br />
+                <label for="age"> Age :</label>
+                <input type="text" name="age" maxlength="2" id="age" size="5" />
+                <br /><br />
+                <label id="personality"> Personality type:</label>
+                <input type="text" name="personality" maxlength="4" id="personality" size="6" />
+                <span><a href="">(Don't know your type)</a></span>
+                <br /><br />
+                <label for="os">Faviorite OS</label>
+                <select name="os" id="os">
+                    <option value="Windows">Windows</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Mac OS X">Mac OS X</option>
+                </select>
+                <br /><br />
+                <label for="seeking">Seeking age: </label>
+                <label class="heading" >Seeking age:</label>
+                <input type="text" name="minage" size="6" maxlength="2" /> to <input type="text" name="maxage" size="5" maxlength="2" />
+            <br /><br />
+
+                <input type="submit" value="Signup" id="submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

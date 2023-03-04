@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Task-List-Application.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="my_row_edits" class="row">
+        <div id="my_col_edits" class="col">
+            <label class="my_profile_label_edit" for="">Task List</label>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="col">
+
+            <table>
+                <tr>
+                    <td><label>Task</label>
+                </tr>
+                <tr>
+                    <td><input id="task" type="text" name="task" size="50" /></td>
+                </tr>
+                <tr>
+                    <td><button id="addbtn" onclick="addTask();">Add Task</button></td>
+                </tr>
+                <tr>
+                    <td><button type="reset" id="clear" onclick="clearTask();">Clear Tasks</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col">
+            <table>
+                <tr>
+                    <td><label>Task Lists</label></td>
+                </tr>
+                <tr>
+                    <td><textarea id="taskList" name="tasklist" rows="7" cols="50"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+
+    let allTasks = localStorage.getItem("taskME");
+    if (allTasks === null) {
+        allTasks = "";
+    }
+
+    function addTask() {
+        if (typeof (Storage) !== undefined) {
+            let holdTask = document.getElementById("task").value;
+            allTasks = holdTask + " \n" + allTasks;
+
+            document.getElementById("taskList").value = allTasks;
+            document.getElementById("task").value = "";
+            localStorage.setItem("taskME", allTasks);
+        }
+        else {
+            document.getElementById("taskList").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+    }
+    function clearTask() {
+        document.getElementById("taskList").value = "";
+        document.getElementById("task").value = "";
+        allTasks = "";
+
+
+        localStorage.removeItem("taskME");
+    }
+    window.onload = function () {
+        document.getElementById("taskList").value = allTasks;
+    };
+
+</script>
+
+</html>
