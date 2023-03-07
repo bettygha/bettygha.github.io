@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="BankAccount.js"></script>
+   
+    
+</head>
+<body onload="loadAccounts()">
+    <div class="container">
+    <h3>Deposit to Account</h3>
+    <select name="accountlist" id="accountlist">
+        <option value="">Select account</option>
+    </select><br><br>
+    <label>Amount:</label>
+    <input type="text" id="amount" name="amount" ><br><br>
+    <button id="depositacc" onclick="deposit()">Deposit</button>
+</div>
+</body>
+</html>
