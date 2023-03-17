@@ -9,7 +9,7 @@ class Account {
     setAccount(accountName, deposit) {
         this.#accountName = accountName;
         this.#deposit = deposit;
-        //Account.accountInfoList.push(this)
+       
     }
     getAccountName() {
         return this.#accountName;
@@ -96,8 +96,6 @@ function loadAccounts() {
             const option = document.createElement('option');
             option.appendChild(document.createTextNode(arr[i].account));
             option.value = arr[i].account;
-
-
             options.appendChild(option);
         }
     }

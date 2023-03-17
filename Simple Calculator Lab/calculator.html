@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator.css" >
+</head>
+<body>
+	<h1>Calculator</h1>
+	<div class="container">
+    <form action="http://localhost:3000/calculator" >
+		<input type="text" id="num1" name="firstNum" placeholder="Enter first number">
+		<select id="operation" name="operation">
+			<option value="add">Addition</option>
+			<option value="subtract">Subtraction</option>
+			<option value="multiply">Multiplication</option>
+			<option value="divide">Division</option>
+		</select>
+		<input type="text" id="num2" name="secondNum" placeholder="Enter second number">
+		<button onclick="calculate()">Calculate</button>
+    </form>
+	</div>
+	
+</body>
+</html>

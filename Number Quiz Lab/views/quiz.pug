@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+    - var questions = question
+    - var score = score
+    - var count = 0
+    div.container
+      h2 The Number Quiz
+      form(action='http://localhost:3000/next', method='post')
+        p Your current score is #{score}.
+        p Guess the next number in the sequence.
+        h3 #{questions}
+        label(for='answer') Your Answer:
+        input#answer(type='text', name='answer', required=true) 
+        br
+        input(type='submit', name='submit') 
