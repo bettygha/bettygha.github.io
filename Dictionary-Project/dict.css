@@ -1,0 +1,84 @@
+body {
+    padding: 0 2%;
+    color: #333;
+    background: #f8f8f8;
+  }
+  
+  input[type="submit"] {
+    background-color: #a9ddf4; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .X {
+    margin: auto;
+    padding: 1% 2%;
+    max-width: 1440px;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  form,
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-family: 'Baloo Tamma', cursive;
+  }
+  
+  li {
+    color: #555;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Raleway', serif;
+  }
+  
+  /*SG = style grid*/
+  .SG {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+
+  
+  .SG .sgLi {
+    min-width: -webkit-fill-available;
+    /*min-width: 24%;*/
+    margin: 2% .35%;
+    display: inline-flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  }
+  
+  .SG .sgLi:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+  }
+  
+  .SG .box {
+    width: 100%;
+    height: 100vh;
+    padding: 1% 2%;
+    background: #dbeef9;
+    min-height: 200px;
+    max-height: 220px;
+    box-sizing: border-box;
+  }
+  
+ 
