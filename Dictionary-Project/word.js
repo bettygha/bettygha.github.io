@@ -1,8 +1,3 @@
-const express = require('express');
-const cors = require('cors');
-
-const app = express();
-app.use(cors());
 const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -18,27 +13,12 @@ connection.connect(function(err) {
   }
   console.log('Connected to database with ID: ' + connection.threadId);
 });
-
-/*app.get('/action', function(req, res) {
-  let action = req.query.action;
-  if (action == 'fetch') {
-    let query = "SELECT * FROM name ORDER BY id DESC;";
-    connection.query(query, function(err, data) {
-      if (err) {
-        console.error(err);
-        res.status(500).json({  
-          message: "Error fetching data from database"
-        });
-      } else {
-        res.status(200).json(data);
-      }
-    });
-  } else {
-    res.status(400).json({
-      message: "Invalid action parameter"
-    });
-  }
-});
-*/
-
-module.exports = connection;
+const query = "SELECT * FROM entries WHERE word=" 
+const searchWord = (word) => {
+  return new Promise((resolve , reject )=>{
+    connection.query(query + mysql.escape(word), function(err, data) {
+        resolve(data);
+        reject("Error fetching data from database" + err) }        
+      )})}
+ 
+module.exports.searchWord = searchWord;
